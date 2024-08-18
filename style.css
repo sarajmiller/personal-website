@@ -1,0 +1,54 @@
+:root {
+    font-family: 'minecraft-italic', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 40;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  @font-face {
+    font-family: "minecraft-regular";
+    src: local("minecraft-regular"),
+    url("./font/MinecraftRegular-Bmg3.otf") format("opentype");
+    font-family: "minecraft-bold";
+    src: local("minecraft-bold"),
+    url("./font/MinecraftBold-nMK1.otf") format("opentype");
+    font-family: "minecraft-italic";
+    src: local("minecraft-italic"),
+    url("./font/MinecraftItalic-R8Mo.otf") format("opentype");
+  }
+
+* {
+  box-sizing: border-box;
+}
+  
+
+  h1 {
+    font-family: "minecraft-regular", Inter;
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
+
+
+.box-1 {
+  /* in content-box, padding gets added onto the width and height. */
+  box-sizing: content-box;
+  background-color: lightblue;
+  width: 700px;
+  height: 300px;
+  padding: 50px;
+  border: 30px solid black;
+}
+
+.box-2 {
+  /* in border-box, padding is included in the width and height */
+  box-sizing: border-box;
+  background-color: lightcoral;
+  width: 700px;
+  height: 300px;
+  padding: 50px;
+  border: 30px solid black;
+}
