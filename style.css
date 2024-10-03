@@ -21,6 +21,11 @@
     url("./font/MinecraftItalic-R8Mo.otf") format("opentype");
   }
 
+.bold {
+  font-family: "minecraft-regular";
+  background-color: lightblue;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -32,9 +37,23 @@
     line-height: 1.1;
   }
 
+  h2 {
+    margin: 0 0 20px 0;
+  }
+
+  .card {
+    background-color: lightblue;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 10px 50px;
+  }
+  
+  p {
+    margin: 10px 0 0 0;
+  }
 
 .box-1 {
-  /* in content-box, padding gets added onto the width and height. */
+  /* in content-box, padding and border get added onto the width and height. */
   box-sizing: content-box;
   background-color: lightblue;
   width: 700px;
@@ -44,11 +63,12 @@
 }
 
 .box-2 {
-  /* in border-box, padding is included in the width and height */
+  /* in border-box, padding and border are included in the width and height */
   box-sizing: border-box;
   background-color: lightcoral;
   width: 700px;
   height: 300px;
   padding: 50px;
   border: 30px solid black;
+  margin: 0 auto;
 }
