@@ -7,6 +7,7 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #1e1e2e;
   }
   
   @font-face {
@@ -21,9 +22,21 @@
     url("./font/MinecraftItalic-R8Mo.otf") format("opentype");
   }
 
-.bold {
-  font-family: "minecraft-regular";
-  background-color: lightblue;
+body {
+  font-family: "minecraft-regular", Inter;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+  width: 55%;
+  color: #89dceb;
+}
+
+bold {
+  font-family: "minecraft-bold";
+}
+
+italic {
+  font-family: "minecraft-italic";
 }
 
 * {
@@ -35,22 +48,90 @@
     font-family: "minecraft-regular", Inter;
     font-size: 3.2em;
     line-height: 1.1;
+    color: #89dceb;
   }
 
   h2 {
-    margin: 0 0 20px 0;
-  }
-
-  .card {
-    background-color: lightblue;
-    padding: 10px;
-    border: 2px solid black;
-    margin: 10px 50px;
+    color: #89dceb;
   }
   
   p {
     margin: 10px 0 0 0;
   }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+  }
+
+  header #header_left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  header #header_left .name {
+    display: flex;
+    align-items: center;
+  }
+
+  header #header_left .name a {
+    font-size: 3rem;
+    line-height: 2rem;
+    font-family: "minecraft-bold", "minecraft-regular", Inter;
+    color: #89dceb;
+    text-decoration: none;
+  }
+
+  navbar {
+    margin: 1rem 0;
+    box-sizing: border-box;
+  }
+
+  .menu-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  navbar .menu-list .navbar-item {
+    font-size: 20px;
+    margin: 0 1rem 0 0;
+    border-bottom: 2px;
+    color: white;
+  }
+
+  navbar .menu-list .navbar-item a {
+    font-family: "minecraft-bold", "minecraft-regular", Inter;
+    color: white;
+    text-decoration: none;
+  }
+
+  main {
+    display: block;
+  }
+
+  .content {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 20px;
+  }
+
+  .card {
+    background-color: #313244;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 5px 10px;
+  }
+
+  .card .card-list {
+    list-style-type: ">> ";
+  }
+  
 
 .box-1 {
   /* in content-box, padding and border get added onto the width and height. */
