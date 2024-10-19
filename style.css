@@ -33,15 +33,13 @@
 
 @font-face {
   font-family: 'minecraftregular';
-  src: url('minecraftregular-bmg3-webfont.eot');
+  
+  src: url('font/webfontkit-20241019-120320/minecraftregular-bmg3-webfont.eot');
   src: url('minecraftregular-bmg3-webfont.eot?#iefix') format('embedded-opentype'),
-       url('minecraftregular-bmg3-webfont.woff2') format('woff2'),
-       url('minecraftregular-bmg3-webfont.woff') format('woff'),
-       url('minecraftregular-bmg3-webfont.ttf') format('truetype'),
-       url("./font/MinecraftRegular-Bmg3.otf") format("opentype");
+       url('font/webfontkit-20241019-120320/minecraftregular-bmg3-webfont.woff2') format('woff2'),
+       url('font/webfontkit-20241019-120320/minecraftregular-bmg3-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-
 }
 
 body {
@@ -69,7 +67,6 @@ italic {
   
 
   h1 {
-    font-family: "minecraft-regular", Inter;
     font-size: 3.2em;
     line-height: 1.1;
     color: #89dceb;
@@ -105,7 +102,6 @@ italic {
   header #header_left .name a {
     font-size: 3rem;
     line-height: 2rem;
-    font-family: "minecraft-bold", "minecraft-regular", Inter;
     color: #89dceb;
     text-decoration: none;
   }
@@ -146,7 +142,6 @@ italic {
 
 
   navbar .menu-list .navbar-item a {
-    font-family: "minecraft-bold", "minecraft-regular", Inter;
     color: white;
     text-decoration: none;
     transition: color .3s ease-out 0;
