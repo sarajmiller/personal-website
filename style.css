@@ -107,11 +107,36 @@ italic {
     color: white;
   }
 
+  /* button {
+    font-family: "minecraft-bold", "minecraft-regular", Inter;
+    background-color: #1e1e2e;
+    color: white;
+    border: none;
+  } */
+
+  navbar .menu-list .navbar-item:hover {
+    color: #89dceb;
+    cursor: pointer;
+    transition: color .5s ease-out 0.10s;
+  }
+
+
+
   navbar .menu-list .navbar-item a {
     font-family: "minecraft-bold", "minecraft-regular", Inter;
     color: white;
     text-decoration: none;
+    transition: color .3s ease-out 0;
   }
+
+
+  navbar .menu-list .navbar-item a:hover {
+    color: #89dceb;
+    cursor: pointer;
+    transition: color .5s ease-out 0.10s;
+  }
+
+
 
   main {
     display: block;
@@ -123,15 +148,20 @@ italic {
     font-size: 20px;
   }
 
-  .card {
+  .content .card {
     background-color: #313244;
     padding: 10px;
     border-radius: 4px;
     margin: 5px 10px;
+    border: 20px white;
   }
 
   .card .card-list {
     list-style-type: ">> ";
+  }
+
+  .card .card-list a {
+    color: #89dceb;
   }
   
 
