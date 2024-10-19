@@ -10,7 +10,7 @@
     background-color: #1e1e2e;
   }
   
-  @font-face {
+  /* @font-face {
     font-family: "minecraft-regular";
     src: url("./font/MinecraftRegular-Bmg3.otf") format("opentype");
     font-family: "minecraft-bold";
@@ -28,6 +28,19 @@
          url("./font/MinecraftRegular-Bmg3.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
+
+} */
+
+@font-face {
+  font-family: 'minecraftregular';
+  src: url('minecraftregular-bmg3-webfont.eot');
+  src: url('minecraftregular-bmg3-webfont.eot?#iefix') format('embedded-opentype'),
+       url('minecraftregular-bmg3-webfont.woff2') format('woff2'),
+       url('minecraftregular-bmg3-webfont.woff') format('woff'),
+       url('minecraftregular-bmg3-webfont.ttf') format('truetype'),
+       url("./font/MinecraftRegular-Bmg3.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 
 }
 
