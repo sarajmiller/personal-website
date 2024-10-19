@@ -1,5 +1,5 @@
 :root {
-    font-family: 'minecraft-italic', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: 'Monocraft', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 40;
   
@@ -130,27 +130,20 @@
     font-display: swap;
 }
 
+* {
+  box-sizing: border-box;
+}
 
 
 body {
-  font-family: "minecraft-regular", Inter;
+  font-family: "Monocraft", Inter;
+  font-weight: normal;
+  font-style: normal;
   margin-left: auto;
   margin-right: auto;
   padding: 1.5rem;
   width: 55%;
   color: #89dceb;
-}
-
-bold {
-  font-family: "minecraft-bold";
-}
-
-italic {
-  font-family: "minecraft-italic";
-}
-
-* {
-  box-sizing: border-box;
 }
 
 
@@ -160,14 +153,27 @@ italic {
     font-size: 3.2em;
     line-height: 1.1;
     color: #89dceb;
+    font-weight: normal;
   }
 
   h2 {
     color: #89dceb;
+    font-weight: normal;
+  }
+
+  h3 {
+    font-weight: normal;
+    font-style: normal;
   }
   
   p {
     margin: 10px 0 0 0;
+  }
+
+  italic {
+    font-style: 'Monocraft', sans-serif;
+    font-weight: normal;
+    font-style: italic;
   }
 
   header {
@@ -194,6 +200,7 @@ italic {
     line-height: 2rem;
     color: #89dceb;
     text-decoration: none;
+    font-weight: normal;
   }
 
   navbar {
@@ -214,13 +221,6 @@ italic {
     border-bottom: 2px;
     color: white;
   }
-
-  /* button {
-    font-family: "minecraft-bold", "minecraft-regular", Inter;
-    background-color: #1e1e2e;
-    color: white;
-    border: none;
-  } */
 
   navbar .menu-list .navbar-item:hover {
     color: #89dceb;
@@ -272,25 +272,3 @@ italic {
   .card .card-list a {
     color: #89dceb;
   }
-  
-
-.box-1 {
-  /* in content-box, padding and border get added onto the width and height. */
-  box-sizing: content-box;
-  background-color: lightblue;
-  width: 700px;
-  height: 300px;
-  padding: 50px;
-  border: 30px solid black;
-}
-
-.box-2 {
-  /* in border-box, padding and border are included in the width and height */
-  box-sizing: border-box;
-  background-color: lightcoral;
-  width: 700px;
-  height: 300px;
-  padding: 50px;
-  border: 30px solid black;
-  margin: 0 auto;
-}
