@@ -3,44 +3,134 @@
     line-height: 1.5;
     font-weight: 40;
   
-    font-synthesis: none;
+    /* font-synthesis: none; */
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #1e1e2e;
   }
   
-  /* @font-face {
-    font-family: "minecraft-regular";
-    src: url("./font/MinecraftRegular-Bmg3.otf") format("opentype");
-    font-family: "minecraft-bold";
-    src: local("minecraft-bold"),
-    url("./font/MinecraftBold-nMK1.otf") format("opentype");
-    font-family: "minecraft-italic";
-    src: local("minecraft-italic"),
-    url("./font/MinecraftItalic-R8Mo.otf") format("opentype");
-  }
-
   @font-face {
-    font-family: 'minecraftregular';
-    src: url('minecraftregular-bmg3-webfont.woff2') format('woff2'),
-         url('minecraftregular-bmg3-webfont.woff') format('woff'),
-         url("./font/MinecraftRegular-Bmg3.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-
-} */
+    font-family: 'Monocraft';
+    src: url('font/Monocraft-Black-Italic.woff2') format('woff2'),
+        url('font/Monocraft-Black-Italic.woff') format('woff'),
+        url('font/Monocraft-Black-Italic-04.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
 
 @font-face {
-  font-family: 'minecraftregular';
-  
-  src: url('font/webfontkit-20241019-120320/minecraftregular-bmg3-webfont.eot');
-  src: url('minecraftregular-bmg3-webfont.eot?#iefix') format('embedded-opentype'),
-       url('font/webfontkit-20241019-120320/minecraftregular-bmg3-webfont.woff2') format('woff2'),
-       url('font/webfontkit-20241019-120320/minecraftregular-bmg3-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Monocraft';
+    src: url('font/Monocraft-Black.woff2') format('woff2'),
+        url('font/Monocraft-Black.woff') format('woff'),
+        url('font/Monocraft-Black-03.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: 'Monocraft';
+    src: url('font/Monocraft.woff2') format('woff2'),
+        url('font/Monocraft.woff') format('woff'),
+        url('font/Monocraft-01.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monocraft';
+    src: url('font/Monocraft-Bold.woff2') format('woff2'),
+        url('font/Monocraft-Bold.woff') format('woff'),
+        url('font/Monocraft-Bold-05.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monocraft';
+    src: url('font/Monocraft-ExtraLight.woff2') format('woff2'),
+        url('font/Monocraft-ExtraLight.woff') format('woff'),
+        url('font/Monocraft-ExtraLight-11.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monocraft';
+    src: url('font/Monocraft-Bold-Italic.woff2') format('woff2'),
+        url('font/Monocraft-Bold-Italic.woff') format('woff')
+        url('font/Monocraft-Bold-Italic-06.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monocraft';
+    src: url('font/Monocraft-Italic.woff2') format('woff2'),
+        url('font/Monocraft-Italic.woff') format('woff'),
+        url('font/Monocraft-Italic-02.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monocraft';
+    src: url('font/Monocraft-Light.woff2') format('woff2'),
+        url('font/Monocraft-Light.woff') format('woff'),
+        url('font/Monocraft-Light-09.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monocraft';
+    src: url('font/Monocraft-Light-Italic.woff2') format('woff2'),
+        url('font/Monocraft-Light-Italic.woff') format('woff'),
+        url('font/Monocraft-Light-Italic-10.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monocraft';
+    src: url('font/Monocraft-ExtraLight-Italic.woff2') format('woff2'),
+        url('font/Monocraft-ExtraLight-Italic.woff') format('woff'),
+        url('font/Monocraft-ExtraLight-Italic-12.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monocraft';
+    src: url('font/Monocraft-SemiBold-Italic.woff2') format('woff2'),
+        url('font/Monocraft-SemiBold-Italic.woff') format('woff'),
+        url('font/Monocraft-SemiBold-Italic-08.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monocraft';
+    src: url('font/Monocraft-SemiBold.woff2') format('woff2'),
+        url('font/Monocraft-SemiBold.woff') format('woff'),
+        url('font/Monocraft-SemiBold-07.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 body {
   font-family: "minecraft-regular", Inter;
