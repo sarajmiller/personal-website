@@ -12,8 +12,7 @@
   
   @font-face {
     font-family: "minecraft-regular";
-    src: local("minecraft-regular"),
-    url("./font/MinecraftRegular-Bmg3.otf") format("opentype");
+    src: url("./font/MinecraftRegular-Bmg3.otf") format("opentype");
     font-family: "minecraft-bold";
     src: local("minecraft-bold"),
     url("./font/MinecraftBold-nMK1.otf") format("opentype");
@@ -21,6 +20,16 @@
     src: local("minecraft-italic"),
     url("./font/MinecraftItalic-R8Mo.otf") format("opentype");
   }
+
+  @font-face {
+    font-family: 'minecraftregular';
+    src: url('minecraftregular-bmg3-webfont.woff2') format('woff2'),
+         url('minecraftregular-bmg3-webfont.woff') format('woff'),
+         url("./font/MinecraftRegular-Bmg3.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 body {
   font-family: "minecraft-regular", Inter;
@@ -118,6 +127,7 @@ italic {
     color: #89dceb;
     cursor: pointer;
     transition: color .5s ease-out 0.10s;
+    font-size-adjust: 20px;
   }
 
 
@@ -134,6 +144,7 @@ italic {
     color: #89dceb;
     cursor: pointer;
     transition: color .5s ease-out 0.10s;
+    font-size-adjust: 20px;
   }
 
 
