@@ -165,6 +165,11 @@ body {
     font-weight: normal;
     font-style: normal;
   }
+
+  h4 {
+    font-weight: normal;
+    font-style: normal;
+  }
   
   p {
     margin: 10px 0 0 0;
@@ -174,6 +179,16 @@ body {
     font-style: 'Monocraft', sans-serif;
     font-weight: normal;
     font-style: italic;
+  }
+
+  italic a {
+    color: #89dceb;
+  }
+
+  bold {
+    font-style: 'Monocraft', sans-serif;
+    font-weight: bold;
+    font-style: normal;
   }
 
   header {
@@ -267,6 +282,10 @@ body {
 
   .card .card-list {
     list-style-type: ">> ";
+  }
+
+  .card .card-list .card-list-item {
+    margin-bottom: 10px;
   }
 
   .card .card-list a {
