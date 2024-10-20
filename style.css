@@ -9,7 +9,7 @@
     -moz-osx-font-smoothing: grayscale;
     background-color: #1e1e2e;
   }
-  
+/*   
   @font-face {
     font-family: 'Monocraft';
     src: url('font/Monocraft-Black-Italic.woff2') format('woff2'),
@@ -18,9 +18,9 @@
     font-weight: 900;
     font-style: italic;
     font-display: swap;
-}
+} */
 
-@font-face {
+/* @font-face {
     font-family: 'Monocraft';
     src: url('font/Monocraft-Black.woff2') format('woff2'),
         url('font/Monocraft-Black.woff') format('woff'),
@@ -28,7 +28,7 @@
     font-weight: 900;
     font-style: normal;
     font-display: swap;
-}
+} */
 
 @font-face {
     font-family: 'Monocraft';
@@ -50,17 +50,17 @@
     font-display: swap;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Monocraft';
     src: url('font/Monocraft-ExtraLight.woff2') format('woff2'),
         url('font/Monocraft-ExtraLight.woff') format('woff'),
         url('font/Monocraft-ExtraLight-11.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
-    font-display: swap;
-}
+    font-display: swap; 
+}*/
 
-@font-face {
+/* @font-face {
     font-family: 'Monocraft';
     src: url('font/Monocraft-Bold-Italic.woff2') format('woff2'),
         url('font/Monocraft-Bold-Italic.woff') format('woff')
@@ -68,7 +68,7 @@
     font-weight: bold;
     font-style: italic;
     font-display: swap;
-}
+} */
 
 @font-face {
     font-family: 'Monocraft';
@@ -90,7 +90,7 @@
     font-display: swap;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Monocraft';
     src: url('font/Monocraft-Light-Italic.woff2') format('woff2'),
         url('font/Monocraft-Light-Italic.woff') format('woff'),
@@ -98,9 +98,9 @@
     font-weight: 300;
     font-style: italic;
     font-display: swap;
-}
+} */
 
-@font-face {
+/* @font-face {
     font-family: 'Monocraft';
     src: url('font/Monocraft-ExtraLight-Italic.woff2') format('woff2'),
         url('font/Monocraft-ExtraLight-Italic.woff') format('woff'),
@@ -108,9 +108,9 @@
     font-weight: 200;
     font-style: italic;
     font-display: swap;
-}
+} */
 
-@font-face {
+/* @font-face {
     font-family: 'Monocraft';
     src: url('font/Monocraft-SemiBold-Italic.woff2') format('woff2'),
         url('font/Monocraft-SemiBold-Italic.woff') format('woff'),
@@ -118,7 +118,7 @@
     font-weight: 600;
     font-style: italic;
     font-display: swap;
-}
+} */
 
 @font-face {
     font-family: 'Monocraft';
