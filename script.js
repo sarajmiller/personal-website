@@ -11,3 +11,7 @@ button.addEventListener('mouseover', () => {
     
 })
 
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+if (isMobile) {
+  /* your code here */
+}

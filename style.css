@@ -146,6 +146,24 @@ body {
   color: #89dceb;
 }
 
+@media screen and (max-width: 48rem) {
+  body {
+    width: 95%;
+    header #header-left .name a {
+      font-size: 2rem;
+    }
+    header #header-left #sidebar-btn {
+      display: flex;
+      margin-right: .5rem;
+    }
+    #navbar {
+      display: none;
+    }
+  }
+
+  
+}
+
 
   
 
@@ -198,19 +216,13 @@ body {
     margin: 1rem 0;
   }
 
-  header #header_left {
+  header #header-left {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-
-  header #header_left .name {
-    display: flex;
-    align-items: center;
-  }
-
-  header #header_left .name a {
+  header #header-left .name a {
     font-size: 3rem;
     line-height: 2rem;
     color: #89dceb;
@@ -218,7 +230,11 @@ body {
     font-weight: normal;
   }
 
-  navbar {
+  header #sidebar-btn {
+    display: none;
+  }
+
+  nav {
     margin: 1rem 0;
     box-sizing: border-box;
   }
@@ -230,30 +246,35 @@ body {
     padding: 0;
   }
 
-  navbar .menu-list .navbar-item {
+  nav .menu-list .navbar-item {
     font-size: 20px;
     margin: 0 1rem 0 0;
     border-bottom: 2px;
     color: white;
+    height: 50px;
+    margin-right: 30px;
+    width: fit-content;
+    transition: all 1s;
   }
 
-  navbar .menu-list .navbar-item:hover {
+
+  nav .menu-list .navbar-item a:hover {
     color: #89dceb;
     cursor: pointer;
-    transition: color .5s ease-out 0.10s;
-    font-size-adjust: 20px;
+    text-decoration: underline;
+    transition: all .5s ease-in-out 0s;
   }
 
 
 
-  navbar .menu-list .navbar-item a {
+  nav .menu-list .navbar-item a {
     color: white;
     text-decoration: none;
     transition: color .3s ease-out 0;
   }
 
 
-  navbar .menu-list .navbar-item a:hover {
+  nav .menu-list .navbar-item a:hover {
     color: #89dceb;
     cursor: pointer;
     transition: color .5s ease-out 0.10s;
