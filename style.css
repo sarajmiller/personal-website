@@ -110,7 +110,7 @@
     font-display: swap;
 } */
 
-/* @font-face {
+@font-face {
     font-family: 'Monocraft';
     src: url('font/Monocraft-SemiBold-Italic.woff2') format('woff2'),
         url('font/Monocraft-SemiBold-Italic.woff') format('woff'),
@@ -118,7 +118,7 @@
     font-weight: 600;
     font-style: italic;
     font-display: swap;
-} */
+}
 
 @font-face {
     font-family: 'Monocraft';
@@ -154,7 +154,13 @@ body {
     }
     header #header-left #sidebar-btn {
       display: flex;
-      margin-right: .5rem;
+      width:35px;
+      height:35px;
+      margin-top:4px;
+      margin-right: 1rem;
+    }
+    header #header-left .name a {
+      font-size: 1.8rem;
     }
     #navbar {
       display: none;
@@ -176,7 +182,7 @@ body {
 
   h2 {
     color: #89dceb;
-    font-weight: normal;
+    font-weight: 600;
   }
 
   h3 {
@@ -188,6 +194,10 @@ body {
     font-weight: normal;
     font-style: normal;
   }
+
+  .semi-bold {
+    font-weight: 600;
+  }
   
   p {
     margin: 10px 0 0 0;
@@ -195,7 +205,7 @@ body {
 
   italic {
     font-style: 'Monocraft', sans-serif;
-    font-weight: normal;
+    font-weight: 600;
     font-style: italic;
   }
 
