@@ -38,7 +38,7 @@ darkButton.addEventListener("click", () => {
   }); 
 
 cherryButton.addEventListener("click", () => {
-  const newTheme = currentThemeSetting === "green";
+  const newTheme = "green";
 
   localStorage.setItem("theme", newTheme);
   updateThemeOnHtmlEl({ theme: newTheme });
@@ -49,7 +49,7 @@ cherryButton.addEventListener("click", () => {
 }); 
 
 greenButton.addEventListener("click", () => {
-  const newTheme = currentThemeSetting === "dark";
+  const newTheme = "dark";
 
   localStorage.setItem("theme", newTheme);
   updateThemeOnHtmlEl({ theme: newTheme });
