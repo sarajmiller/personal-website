@@ -138,12 +138,23 @@
   --color-text: #89dceb;
   --color-background: #1e1e2e;
   --color-navbar: #FFFFFF;
+  --color-card: #313244;
 }
 
-/* [data-theme="light"] {
-  --color-text: #89dceb;
-  --color-background: #1e1e2e;
-} */
+[data-theme="cherry"] {
+  --color-text: #b8111E;
+  --color-background: white;
+  --color-navbar: #b8111E;
+  --color-card: #f2cdcd;
+}
+
+html[data-theme=cherry] #dark-theme-icon {
+  display: none;
+}
+
+html[data-theme=dark] #cherry-theme-icon {
+  display: none;
+}
 
 body {
   font-family: "Monocraft", Inter;
@@ -232,7 +243,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem 0;
+    margin: 0 0;
   }
 
   header #header-left {
@@ -253,8 +264,24 @@ body {
     display: none;
   }
 
+  /* added so that button stays enlarged after theme change */
+  header .data-theme-toggle .bow.hovered {
+    transform: scale(1.2);
+  }
+
+  header .data-theme-toggle .bow {
+    height: 50px;
+    margin-top: 5px;
+    transition: transform .4s ease-out 0.10s;
+  }
+
+  header .data-theme-toggle .bow:hover {
+    transition: transform .4s ease-out 0.10s;
+    transform:scale(1.2)
+  }
+
   nav {
-    margin: 1rem 0;
+    margin: 0;
     box-sizing: border-box;
   }
 
@@ -277,30 +304,31 @@ body {
   }
 
 
-  nav .menu-list .navbar-item a:hover {
+  /* nav .menu-list .navbar-item a:hover {
     color: #89dceb;
-    cursor: pointer;
+    cursor: pointer; */
     /* text-decoration: underline; */
-    text-shadow: 0 0 3px white;
+    /* text-shadow: 0 0 3px white; */
     /* transition: all .5s ease-in-out 0s; */
-    transition: 0s ease-in-out;
-  }
+    /* transition: 0s ease-in-out;
+  } */
 
 
 
   nav .menu-list .navbar-item a {
-    color: white;
+    color: var(--color-navbar);
     text-decoration: none;
     transition: color .3s ease-out 0;
   }
 
 
   nav .menu-list .navbar-item a:hover {
-    color: #89dceb;
+    color: var(--color-text);
+    text-decoration: underline;
     cursor: pointer;
     transition: color .5s ease-out 0.10s;
-    font-size-adjust: 20px;
   }
+
 
 
 
@@ -315,11 +343,10 @@ body {
   }
 
   .content .card {
-    background-color: #313244;
+    background-color: var(--color-card);
     padding: 20px;
     border-radius: 4px;
     margin: 10px 10px;
-    border: 20px white;
   }
 
   .card .card-list {
@@ -331,5 +358,5 @@ body {
   }
 
   .card .card-list a {
-    color: #89dceb;
+    color: var(--color-text);
   }
