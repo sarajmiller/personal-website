@@ -43,23 +43,3 @@ cherryButton.addEventListener("click", () => {
 
   currentThemeSetting = newTheme;
 }); 
-
-const themeToggleButtonCherry = document.querySelector('.data-theme-toggle .bow');
-
-themeToggleButtonCherry.addEventListener('mouseenter', () => {
-  console.log('well')
-  themeToggleButtonCherry.classList.add('hovered');
-});
-
-themeToggleButtonCherry.addEventListener('mouseleave', () => {
-  console.log('yes')
-  themeToggleButtonCherry.classList.remove('hovered');
-});
-
-document.body.addEventListener('themeChange', () => {
-  if (themeToggleButton.matches(':hover')) {
-    themeToggleButton.classList.add('hovered');
-  } else {
-    themeToggleButton.classList.remove('hovered');
-  }
-});
