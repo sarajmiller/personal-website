@@ -304,77 +304,30 @@ body {
   }
 
 
+  /* nav .menu-list .navbar-item a:hover {
+    color: #89dceb;
+    cursor: pointer; */
+    /* text-decoration: underline; */
+    /* text-shadow: 0 0 3px white; */
+    /* transition: all .5s ease-in-out 0s; */
+    /* transition: 0s ease-in-out;
+  } */
+
+
+
   nav .menu-list .navbar-item a {
-    position: relative;
     color: var(--color-navbar);
     text-decoration: none;
-    padding: 0px 10px;
-    cursor: pointer; /* Hand cursor for hover effect */
-    transition: box-shadow 0.3s ease;
+    transition: color .3s ease-out 0;
   }
 
-  nav .menu-list .navbar-item a::before, 
-  nav .menu-list .navbar-item a::after {
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border: 2px solid var(--color-text);
-    box-sizing: border-box;
-    opacity: 0;
-    transition: opacity 0.3 ease;
-  }
 
-  /* Top-left and bottom-right corners */
-nav .menu-list .navbar-item a::before {
-  top: 0;
-  left: 0;
-  border-right: none;
-  border-bottom: none;
-}
-
-nav .menu-list .navbar-item a::after {
-  bottom: 0;
-  right: 0;
-  border-left: none;
-  border-top: none;
-}
-
-nav .menu-list .navbar-item a::before:nth-of-type(2) {
-  top: 0;
-  right: 0;
-  border-left: none; /* Only top and right borders */
-  border-bottom: none;
-}
-
-nav .menu-list .navbar-item a::after:nth-of-type(2) {
-  bottom: 0;
-  left: 0;
-  border-right: none; /* Only bottom and left borders */
-  border-top: none;
-}
-
-nav .menu-list .navbar-item a:hover::before, 
-nav .menu-list .navbar-item a:hover::after {
-  opacity: 1;
-  text-decoration: underline;
-}
-
-
-
-
-  /* nav .menu-list .navbar-item a:hover {
+  nav .menu-list .navbar-item a:hover {
     color: var(--color-text);
     text-decoration: underline;
     cursor: pointer;
-    box-shadow: 
-      -2px -2px 0 0 var(--color-text),
-      2px -2px 0 0 var(--color-text),
-      -2px 2px 0 0 var(--color-text),
-      2px 2px 0 0 var(--color-text),
-      inset 0 0 0 2px transparent;
     transition: color .5s ease-out 0.10s;
-  } */
+  }
 
 
 
