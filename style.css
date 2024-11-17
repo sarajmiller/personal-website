@@ -148,11 +148,34 @@
   --color-card: #f2cdcd;
 }
 
-html[data-theme=cherry] #dark-theme-icon {
+[data-theme="green"] {
+  --color-text: #025136;
+  --color-background: #e3e9df;
+  --color-text: #025136;
+  --color-card: #c3d2b1;
+}
+
+html[data-theme=cherry] #cherry-theme-icon {
+  display: block;
+}
+
+html[data-theme=dark] #dark-theme-icon {
+  display: block;
+}
+
+html[data-theme="green"] #green-theme-icon {
+  display: block;
+}
+
+html[data-theme=cherry] #dark-theme-icon, #green-theme-icon {
   display: none;
 }
 
-html[data-theme=dark] #cherry-theme-icon {
+html[data-theme=dark] #cherry-theme-icon, #green-theme-icon {
+  display: none;
+}
+
+html[data-theme="green"] #cherry-theme-icon, #dark-theme-icon {
   display: none;
 }
 
