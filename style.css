@@ -287,11 +287,6 @@ body {
     display: none;
   }
 
-  /* added so that button stays enlarged after theme change */
-  header .data-theme-toggle .bow.hovered {
-    transform: scale(1.2);
-  }
-
   header .data-theme-toggle .bow {
     height: 50px;
     margin-top: 5px;
@@ -300,6 +295,7 @@ body {
 
   header .data-theme-toggle .bow:hover {
     transition: transform .4s ease-out 0.10s;
+    cursor: pointer;
     transform:scale(1.2)
   }
 
