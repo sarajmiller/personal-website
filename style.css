@@ -160,6 +160,18 @@ html {
   width: 100%;
 }
 
+html[data-theme=cherry] .menu-button {
+  content: url('red_menu_icon.png');
+}
+
+html[data-theme=dark] .menu-button {
+  content: url('blue_menu_icon.png');
+}
+
+html[data-theme=green] .menu-button {
+  content: url('green_menu_icon.png');
+}
+
 html[data-theme=cherry] #cherry-theme-icon {
   display: block;
 }
@@ -224,6 +236,61 @@ body .page-content {
     #navbar {
       display: none;
     }
+
+    hide {
+      display: none;
+    }
+
+      .sidebar {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -250px; /* Start off-screen */
+        width: 200px;
+        height: 100%;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-right: 50px;
+        background-color: var(--color-card);
+        z-index: 1001; /* Ensure it's above the overlay */
+        transition: left 0.3s ease; /* Smooth transition for sliding */
+        
+    }
+  
+    /* Sidebar - visible when 'show' class is added */
+    .sidebar.show {
+        left: 0; /* Slide into view */
+    }
+
+    .sidebar .menu-list {
+      display: flex; /* Use flexbox for easy vertical alignment */
+      flex-direction: column; /* Stack items vertically */
+      list-style: none; /* Remove bullets */
+      font-size: 20px;
+  }
+
+  .sidebar .menu-list a {
+    color: var(--color-text)
+  }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0.3s, opacity 0.3s ease;
+      z-index: 1000;
+    }
+    /* Overlay - visible when 'active' class is added */
+    .overlay.active {
+      visibility: visible;
+      opacity: 1;
+    }
+  
   }
 
   
@@ -258,6 +325,10 @@ body .page-content {
   
   p {
     margin: 10px 0 0 0;
+  }
+
+  .sidebar {
+    display: none;
   }
 
   #sparkle-canvas {
@@ -355,14 +426,14 @@ body .page-content {
 
 
 
-  nav .menu-list .navbar-item a {
+  .menu-list .navbar-item a {
     color: var(--color-navbar);
     text-decoration: none;
     transition: color .3s ease-out 0;
   }
 
 
-  nav .menu-list .navbar-item a:hover {
+  .menu-list .navbar-item a:hover {
     color: var(--color-text);
     text-decoration: underline;
     cursor: pointer;

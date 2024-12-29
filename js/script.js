@@ -1,44 +1,38 @@
-// get theme on page load
-localStorage.getItem("theme");
+const menuButton = document.querySelector('.menu-button');
+const sidebar = document.querySelector('.sidebar');
+const overlay = document.getElementById('overlay');
+const navbar = document.getElementById('navbar');
+const menuList = document.querySelector('.menu-list'); // list of nav links
 
-// set theme on button press
-localStorage.setItem("theme", newTheme);
+menuButton.addEventListener('click', () => {
 
-let currentThemeSetting = localStorage.getItem("theme") || "dark";
+    sidebar.classList.toggle('show'); // Toggle visibility class
+    overlay.classList.toggle('active'); // Set overlay to active
+    
 
-// target the button using the data attribute we added earlier
-const button = document.getElementById('data-theme-toggle')
-console.log(button)
-
-document.addEventListener("DOMContentLoaded", () => {
-  let currentThemeSetting = localStorage.getItem("theme") || "dark";
-  document.documentElement.setAttribute("data-theme", currentThemeSetting);
-
-  const button = document.getElementById('data-theme-toggle');
-  button.addEventListener("click", () => {
-      const newTheme = currentThemeSetting === "dark" ? "cherry" : "dark";
-
-      // Update the theme
-      document.documentElement.setAttribute("data-theme", newTheme);
-      localStorage.setItem("theme", newTheme);
-
-      // Update the variable
-      currentThemeSetting = newTheme;
-
-      console.log(`Theme changed to: ${newTheme}`);
-  });
 });
 
+// When we click on the overlay, we want the sidebar to disappear
+overlay.addEventListener('click', () => {
+    sidebar.classList.remove('show'); // Hide sidebar
+    overlay.classList.remove('active'); // Hide overlay
+});
 
-// button.addEventListener("click", () => {
-//   const newTheme = currentThemeSetting === "dark" ? "cherry" : "dark";
+// Function that moves navbar to sidebar if we're in mobile
+function moveMenuToSidebar() {
+    if (window.innerWidth <= 768) { // Mobile mode
+        if (!sidebar.contains(menuList)) { // Move only if it's not already in the sidebar
+            sidebar.appendChild(menuList);
+        }
+    } else { // Desktop mode
+        if (!navbar.contains(menuList)) { // Move only if it's not already in the navbar
+            navbar.appendChild(menuList);
+        }
+    }
+}
 
-//   // update theme attribute on HTML to switch theme in CSS
-//   document.querySelector("html").setAttribute("data-theme", newTheme);
+// Add event listener to handle screen resizing
+window.addEventListener('resize', moveMenuToSidebar);
 
-//   // update in local storage
-//   localStorage.setItem("theme", newTheme);
-
-//   // update the currentThemeSetting in memory
-//   currentThemeSetting = newTheme;
-// });
+// Run the function on initial load
+moveMenuToSidebar();

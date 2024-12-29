@@ -8,17 +8,23 @@
     <link rel="preload" href="font/Monocraft.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <script src="/js/data-theme-toggle.js" defer></script>
     <script src="/js/sparkles.js" defer></script>
+    <script src="/js/script.js" defer></script>
 </head>
 <canvas id="sparkle-canvas"></canvas>
 <body>
     <div class="page-content">
+    <div id="overlay" class="overlay"></div>
     <header>
         <div id="header-left">
             <div id="sidebar-btn">
                 <img class="menu-button" src="menu_icon.png" alt="">
             </div>
+
+            <div class="sidebar">
+
+            </div>
             <div class="name">
-                <a href="index.html" target="_self">Sara Jade Miller</a>
+                <a href="index.html" target="_self">Sara <hide>Jade</hide> Miller</a>
             </div>
         </div>
         <div class ="data-theme-toggle" id="dark-theme-icon" data-theme-toggle>
@@ -61,13 +67,14 @@
             <h2 class="title-item">Skills</h2>
             <h3>Programming Languages, Libraries, & Frameworks</h3>
             <div class="card">
-                Proficient:
+                <div class="semi-bold">Proficient:</div>
                 <ul class="card-list">
                     <li>Python, Java, C, HTML/CSS, JavaScript/TypeScript, RISC-V, SQL, R, LaTeX
                     </li>
                     <li>React, Jekyll, Node.js, Pandas, NumPy, scikit-learn, HoloViews, Git, Bitbucket, Docker</li>
                 </ul>
-                What I want to learn next:
+                <br>
+                <div class="semi-bold">What I want to learn next:</div>
                 <ul class="card-list">
                     <li>C++/C#, Ruby, Go</li>
                 </ul>
@@ -83,9 +90,8 @@
                     <li>French (Conversational)</li>
                 </ul>
             </div>
-        </div>
 
-        <br>
+            <br>
   
     </main>
 </div>
