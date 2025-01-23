@@ -36,24 +36,13 @@ function createSparkle() {
     };
 }
 
-// Draw a single sparkle (pixelated cross)
+// Draw a single sparkle
 function drawSparkle(sparkle) {
     const { x, y, opacity } = sparkle;
-    const segmentSize = sparkleSize * 0.3; // Size of each segment
-    const gap = sparkleSize * 0.1; // Gap between the segments
     ctx.globalAlpha = opacity;
     ctx.fillStyle = getCurrentThemeColor();
 
-    // // Draw horizontal segments
-    // ctx.fillRect(x - segmentSize - gap, y - 1, segmentSize, 2); // Left
-    // ctx.fillRect(x + gap, y - 1, segmentSize, 2); // Right
-
-    // // Draw vertical segments
-    // ctx.fillRect(x - 1, y - segmentSize - gap, 2, segmentSize); // Top
-    // ctx.fillRect(x - 1, y + gap, 2, segmentSize); // Bottom
-
     ctx.font = `${sparkleSize}px Arial`; // Font size and style
-    // ctx.fillText("₊", x, y); // Draw sparkle as a star
     ctx.fillText("+", x, y);
 
     ctx.globalAlpha = 1.0; // Reset global alpha

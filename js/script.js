@@ -2,14 +2,13 @@ const menuButton = document.querySelector('.menu-button');
 const sidebar = document.querySelector('.sidebar');
 const overlay = document.getElementById('overlay');
 const navbar = document.getElementById('navbar');
-const menuList = document.querySelector('.menu-list'); // list of nav links
+const menuList = document.querySelector('.menu-list'); // list of nav links\
+
 
 menuButton.addEventListener('click', () => {
 
     sidebar.classList.toggle('show'); // Toggle visibility class
     overlay.classList.toggle('active'); // Set overlay to active
-    
-
 });
 
 // When we click on the overlay, we want the sidebar to disappear
