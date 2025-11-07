@@ -436,7 +436,6 @@ body .page-content {
     transition: color .3s ease-out 0;
   }
 
-
   .menu-list .navbar-item a:hover {
     color: var(--color-text);
     text-decoration: underline;
